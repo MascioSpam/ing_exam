@@ -23,12 +23,9 @@ using ShisenShoCore;
 
 public partial class MainWindow: Gtk.Window
 {
-	private Core c;
-	
-	public MainWindow (Core core) : base (Gtk.WindowType.Toplevel)
+	public MainWindow () : base (Gtk.WindowType.Toplevel)
 	{
 		Build ();
-		this.c = core;
 	}
 
 	protected void OnDeleteEvent (object sender, DeleteEventArgs a)

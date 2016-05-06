@@ -1,5 +1,6 @@
 ﻿using System;
 using Gtk;
+using ShisenShoCore;
 
 /*
 *    Copyright 2016 Flavio Mascetti - Davide Cortellucci
@@ -27,8 +28,9 @@ namespace ShisenShoGUI
 		public static void Main (string[] args)
 		{
 			Application.Init ();
-			MainWindow win = new MainWindow ();
-			win.Show ();
+
+			Core c = new Core ();
+			new Window (c);
 			Application.Run ();
 		}
 	}
